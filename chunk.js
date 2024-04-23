@@ -4,11 +4,14 @@
  */
 
 function cuting(tree) {
+  // 빈 바구니
   let chunk = [];
 
   // 전체 순환
   for (let i = 0; i < tree.length; i += 2) {
     // 자르기
+    // slice(start, end)
+    // end에 끝 부분이 넘을 경우 포함되지 않는다.
     let child = tree.slice(i, i + 3);
     // 담기
     chunk.push(child);
